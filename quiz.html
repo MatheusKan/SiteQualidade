@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+#quiz-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+#choices {
+    list-style-type: none;
+    padding: 0;
+}
+
+.choice {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #0056b3;
+}
+
+
+#result-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qualidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#aspectos" class="dropbtn">Aspectos da Qualidade</a>
+                    <div class="dropdown-content">
+                        <a href="visao.html">Minha Visão sobre Qualidade</a>
+                        <a href="diaadia.html">Como inserir a qualidade no Dia a Dia</a>
+                        <a href="software.html">Qualidade de Software</a>
+                        <a href="qualidade.html">Por que é necessário a Qualidade de Software</a>
+                        
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <h1>Qualidade: Um Guia Completo</h1>
+        
+    </header>
+
+    <main>
+        <div id="quiz-container">
+            <h2 id="question">Pergunta</h2>
+            <ul id="choices">
+                <li><button class="choice" onclick="selectAnswer(0)">Opção 1</button></li>
+                <li><button class="choice" onclick="selectAnswer(1)">Opção 2</button></li>
+                <li><button class="choice" onclick="selectAnswer(2)">Opção 3</button></li>
+                <li><button class="choice" onclick="selectAnswer(3)">Opção 4</button></li>
+            </ul>
+            
+            <div id="result-container">
+                <p id="score"></p>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Qualidade</p>
+    </footer>
+</body>
+</html>
