@@ -1,11 +1,9 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estilo do corpo */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,21 +14,53 @@ body {
     min-height: 100vh;
 }
 
-/* Estilo do cabeçalho */
 header {
-    background: #2e7d32; /* Verde escuro */
+    background: #2e7d32; 
     color: #fff;
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.topo {
+    font-size: 45px;
+    font-weight: bold;
     text-align: center;
+    background: #388e3c; 
+    color: #fff;
+}
+td.esquerda{
+    text-align: right;
+    width: 150px;
+}
+table{
+    width: 100%;
+}
+td.center{
+margin-right: 200px;
+font-size: 30px;
+}
+.image {
+    flex: 0 0 200px; /* Define a largura da imagem */
+
 }
 
-/* Estilo da barra de navegação */
+.image img {
+    width: 100%; /* Ajusta a largura da imagem para o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+nav {
+    flex: 1;
+}
+
 .navbar {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: #2e7d32; /* Verde escuro */
+    background-color: #2e7d32;
     padding: 0;
+    font-size: 18px;
+    margin: 0;
 }
 
 .navbar li {
@@ -46,10 +76,9 @@ header {
 }
 
 .navbar a:hover {
-    background-color: #388e3c; /* Verde um pouco mais claro */
+    background-color: #388e3c;
 }
 
-/* Estilo do dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -75,7 +104,8 @@ header {
     display: block;
 }
 
-/* Estilo do main */
+
+
 main {
     flex: 1;
     max-width: 800px;
@@ -83,12 +113,10 @@ main {
     padding: 0 1rem;
 }
 
-/* Estilo das seções */
 section {
     margin-bottom: 2rem;
 }
 
-/* Estilo dos artigos */
 article {
     background: #fff;
     padding: 1rem;
@@ -98,14 +126,12 @@ article {
     border-left: 5px solid #2e7d32; /* Borda verde */
 }
 
-/* Estilo dos títulos dos artigos */
 article h3 {
-    color: #2e7d32; /* Verde escuro */
+    color: #2e7d32;
 }
 
-/* Estilo do rodapé */
 footer {
-    background: #616161; /* Cinza escuro */
+    background: #616161;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -114,8 +140,7 @@ footer {
     bottom: 0;
 }
 
-/* Estilo dos links no rodapé */
 footer a {
-    color: #aed581; /* Verde claro */
+    color: #aed581;
     text-decoration: none;
 }
