@@ -36,7 +36,6 @@ table{
     width: 100%;
 }
 td.center{
-margin-right: 200px;
 font-size: 30px;
 }
 .image {
@@ -97,18 +96,20 @@ nav {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #388e3c;
+    color: #fff;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+
 }
 
 
 
 main {
     flex: 1;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
@@ -118,12 +119,13 @@ section {
 }
 
 article {
-    background: #fff;
+    background: #dcdcdc;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #2e7d32; /* Borda verde */
+    border-left: 5px solid #2e7d32;
+    font-size: 20px;
 }
 
 article h3 {
